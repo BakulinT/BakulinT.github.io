@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>LUW FILM</title>
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__container">
+                    <div class="header__body">
+                        <div class="header__left">
+                            <button class="header__menu-icon btn" data-header-menu>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="24" height="24"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path></g></g>
+                                </svg>
+                            </button>
+                            <a href="#" class="header__logo">
+                                <img src="img/logo.png" alt="">
+                                <p>LuwFilm.Ru</p>
+                            </a>
+                        </div>
+                        <form method="get" action="search" class="header-search__form">
+                            <input type="text" autocomplete="off" name="search_input" placeholder="Поиск" class="header-search__input input">
+                            <button type="submit" class="header__button btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="22px" height="22px"><path fill="#fff" d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                            </button>
+                        </form>
+                        <div class="header__right">
+                            <button class="header__login icon" data-popup="#popup-login" type="button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path fill="#fff" fill-rule="evenodd" clip-rule="evenodd" d="M10.7611 2.99191C10.0494 2.63261 9.26377 2.62501 8.72839 2.62501C8.61801 2.62501 8.40108 2.67746 8.12128 2.84915C7.85174 3.01454 7.56294 3.26753 7.31131 3.60393C6.81422 4.2685 6.46688 5.25098 6.69828 6.51657C6.85887 7.39485 7.45578 7.89605 8.16344 8.17264C8.51932 8.31173 8.88789 8.3858 9.20495 8.4138C9.53598 8.44303 9.75947 8.41783 9.83511 8.39714L9.84817 8.39357L9.8482 8.39371C9.90519 8.37945 9.96129 8.36549 10.0165 8.35174C10.4045 8.25521 10.7503 8.16917 11.0672 8.06081C11.4256 7.93828 11.699 7.80216 11.9015 7.63227C12.2466 7.34273 12.5348 6.82845 12.3424 5.56588C12.1055 4.01055 11.4234 3.32628 10.7611 2.99191ZM11.3244 1.87604C12.3813 2.4096 13.2862 3.4612 13.5782 5.37759C13.809 6.89241 13.5028 7.92053 12.7049 8.58992C12.3358 8.89949 11.9005 9.09695 11.4716 9.24359C11.2005 9.33628 10.9127 9.41462 10.6287 9.48704C11.1584 9.42832 11.6038 9.39499 11.981 9.38176C13.0005 9.346 13.5792 9.4542 14.0014 9.65008C14.0369 9.66659 14.0793 9.68517 14.1273 9.70616C14.3286 9.79435 14.6269 9.92505 14.9231 10.1232C15.3095 10.3817 15.7068 10.7567 16.0741 11.3455C16.7958 12.5022 17.3881 14.4623 17.6236 17.958C17.6468 18.3024 17.3864 18.6004 17.042 18.6236C16.6976 18.6468 16.3996 18.3864 16.3764 18.042C16.1459 14.6195 15.5733 12.9043 15.0136 12.0072C14.7403 11.5691 14.4677 11.3225 14.228 11.1621C14.0329 11.0316 13.8643 10.9572 13.6732 10.8729C13.6102 10.8451 13.5448 10.8163 13.4752 10.784C13.308 10.7064 12.9548 10.5984 12.0248 10.631C11.0959 10.6636 9.64765 10.8336 7.32898 11.2639C5.74152 11.5585 4.79217 12.6526 4.24104 14.0087C3.6841 15.3791 3.57203 16.9432 3.64474 17.9552C3.66947 18.2995 3.41042 18.5987 3.06613 18.6234C2.72184 18.6481 2.42269 18.3891 2.39795 18.0448C2.31534 16.8949 2.43625 15.1295 3.08302 13.5381C3.73561 11.9323 4.96071 10.4321 7.10088 10.0349C7.9106 9.88463 8.62195 9.76445 9.24834 9.67004C9.19759 9.6672 9.1464 9.66349 9.095 9.65895C8.67772 9.62211 8.1906 9.52533 7.70841 9.33687C6.73995 8.95835 5.73127 8.17759 5.46867 6.74139C5.17109 5.11387 5.61722 3.78186 6.31034 2.85522C6.65382 2.39602 7.05931 2.03422 7.46753 1.78373C7.86549 1.53954 8.3098 1.37501 8.72839 1.37501C8.73587 1.37501 8.74346 1.375 8.75115 1.375C9.28147 1.37489 10.3313 1.37468 11.3244 1.87604Z"></path>
+								</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page page__menu-2">
+            <div class="menu menu__hide">
+                <div class="menu__wrapper">
+                    <div class="menu__items">
+                        <div class="menu__items-title">Категории</div>
+                        <a class="menu__item" href="#">
+                            <div class="small__img">
+                                <img src="img/icon/hous.png" alt="">
+                            </div>
+                            <div class="menu__item-title">Категория 2</div>
+                        </a>
+                        <a class="menu__item" href="#">
+                            <div class="small__img">
+                                <img src="img/icon/hous.png" alt="">
+                            </div>
+                            <div class="menu__item-title">Категория 1</div>
+                        </a>
+                        <a class="menu__item" href="#">
+                            <div class="small__img">
+                                <img src="img/icon/hous.png" alt="">
+                            </div>
+                            <div class="menu__item-title">Категория 3</div>
+                        </a>
+                        <a class="menu__item" href="#">
+                            <div class="small__img">
+                                <img src="img/icon/hous.png" alt="">
+                            </div>
+                            <div class="menu__item-title">Категория 4</div>
+                        </a>
+                        <a href="#" class="menu__item-more">Еще</a>
+                    </div>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="small__img">
+                                <img src="img/icon/hous.png" alt="">
+                            </div>
+                            <div class="menu__item-title">Дом</div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="small__img">
+                                <img src="img/icon/hous.png" alt="">
+                            </div>
+                            <div class="menu__item-title">Дом</div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="small__img">
+                                <img src="img/icon/hous.png" alt="">
+                            </div>
+                            <div class="menu__item-title">Дом</div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="small__img">
+                                <img src="img/icon/hous.png" alt="">
+                            </div>
+                            <div class="menu__item-title">Дом</div>
+                        </div>
+                        <a href="#" class="menu__item-more">Еще</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <section class="movie-cover">
+                    <div class="movie__slider">
+                        <div class="movie__slider-wrapper swiper-wrapper">
+                            <!-- Слайды -->
+                            <div class="movie__slide swiper-slide" style="background-image: url(img/content/film_1.webp);">
+                                <div class="movie__slide-block__info">
+                                    <h2 class="movie__slider-title">Переводчик</h2>
+                                    <div class="movie__slider-body">
+                                        <div class="movie__info-items">
+                                            <div class="movie__info-item">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#fff" fill-rule="evenodd" clip-rule="evenodd" d="M8.41301 2.53559C7.08885 2.27235 5.41645 2.45671 3.75094 3.66298C2.52901 4.54798 2.21285 5.82662 2.30311 7.05419C2.34839 7.67016 2.49681 8.256 2.67592 8.73488C2.85993 9.22688 3.05801 9.55777 3.17189 9.68948L3.18075 9.69972L3.18063 9.69981C3.23723 9.76821 3.29306 9.83589 3.34826 9.9028C3.7347 10.3712 4.08995 10.8019 4.45775 11.1771C4.87532 11.6031 5.27486 11.9207 5.69325 12.111C6.45888 12.4591 7.47854 12.4635 9.14277 11.3318C11.2039 9.9302 11.7578 8.44891 11.7847 7.2031C11.8127 5.90201 11.2716 4.75273 10.9212 4.01987C10.8139 3.79535 10.5471 3.49061 10.0968 3.19913C9.65654 2.91419 9.08014 2.66821 8.41301 2.53559ZM10.776 2.14976C11.3427 2.51657 11.8087 2.97811 12.049 3.48069L12.0594 3.5026C12.4073 4.23005 13.0692 5.614 13.0344 7.23001C13.0076 8.47316 12.5724 9.79937 11.4005 11.054C11.5073 11.1265 11.6015 11.2021 11.6803 11.2691C11.8045 11.3746 11.92 11.4849 12.0178 11.5801C12.0428 11.6044 12.0661 11.6271 12.088 11.6486C12.1576 11.7166 12.2133 11.771 12.2649 11.8178C12.5757 12.0996 12.883 12.3846 13.1873 12.667L13.2128 12.6908C13.5093 12.9659 13.803 13.2385 14.0992 13.5077C14.5384 13.9071 14.9736 14.3488 15.3937 14.7751C15.6511 15.0363 15.9027 15.2917 16.1461 15.5281C16.3189 15.6958 16.4836 15.8625 16.644 16.0248C17.1504 16.5373 17.6144 17.0069 18.1544 17.3309C18.4504 17.5085 18.5464 17.8924 18.3688 18.1884C18.1912 18.4843 17.8073 18.5803 17.5113 18.4027C16.8215 17.9889 16.2035 17.3614 15.679 16.829C15.5375 16.6854 15.4028 16.5486 15.2753 16.4248C14.9862 16.1441 14.7191 15.8725 14.4578 15.6067C14.0632 15.2055 13.6819 14.8178 13.2583 14.4327C12.9572 14.1589 12.6593 13.8824 12.3641 13.6084L12.3369 13.5832C12.032 13.3002 11.7299 13.02 11.4252 12.7437C11.3546 12.6797 11.2759 12.6027 11.2028 12.5313C11.1835 12.5124 11.1646 12.4939 11.1463 12.4762C11.0525 12.3849 10.9618 12.2988 10.8711 12.2218C10.667 12.0484 10.5525 12.001 10.5157 11.9959C10.4736 11.9901 10.433 11.9802 10.3944 11.9667C10.2217 12.1011 10.0389 12.234 9.84567 12.3655C7.97044 13.6407 6.47942 13.8417 5.1758 13.2488C4.55957 12.9686 4.03484 12.5313 3.56508 12.0521C3.15678 11.6355 2.7642 11.1594 2.38188 10.6957C2.3282 10.6306 2.27472 10.5658 2.22143 10.5014C1.9725 10.2111 1.71321 9.72911 1.50513 9.17277C1.29078 8.59966 1.1117 7.89707 1.05647 7.14584C0.945689 5.63903 1.33645 3.8683 3.01772 2.65061C4.98122 1.22853 7.01158 0.982531 8.65673 1.30958C9.47426 1.4721 10.1992 1.77641 10.776 2.14976Z"></path>
+                                                </svg>
+                                                <p>боевик, триллер</p>
+                                            </div>
+                                            <div class="movie__info-item">
+                                                <svg width="24" height="24" fill="#fff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"><g><path d="M57,4h-7V1c0-0.553-0.447-1-1-1h-7c-0.553,0-1,0.447-1,1v3H19V1c0-0.553-0.447-1-1-1h-7c-0.553,0-1,0.447-1,1v3H3 C2.447,4,2,4.447,2,5v11v43c0,0.553,0.447,1,1,1h54c0.553,0,1-0.447,1-1V16V5C58,4.447,57.553,4,57,4z M43,2h5v3v3h-5V5V2z M12,2h5 v3v3h-5V5V2z M4,6h6v3c0,0.553,0.447,1,1,1h7c0.553,0,1-0.447,1-1V6h22v3c0,0.553,0.447,1,1,1h7c0.553,0,1-0.447,1-1V6h6v9H4V6z M4,58V17h52v41H4z"/><path d="M38,23h-7h-2h-7h-2h-9v9v2v7v2v9h9h2h7h2h7h2h9v-9v-2v-7v-2v-9h-9H38z M31,25h7v7h-7V25z M38,41h-7v-7h7V41z M22,34h7v7h-7 V34z M22,25h7v7h-7V25z M13,25h7v7h-7V25z M13,34h7v7h-7V34z M20,50h-7v-7h7V50z M29,50h-7v-7h7V50z M38,50h-7v-7h7V50z M47,50h-7 v-7h7V50z M47,41h-7v-7h7V41z M47,25v7h-7v-7H47z"/></g></svg>
+                                                <p>2022</p>
+                                            </div>
+                                            <div class="movie__info-item">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#fff" fill-rule="evenodd" clip-rule="evenodd" d="M8.41301 2.53559C7.08885 2.27235 5.41645 2.45671 3.75094 3.66298C2.52901 4.54798 2.21285 5.82662 2.30311 7.05419C2.34839 7.67016 2.49681 8.256 2.67592 8.73488C2.85993 9.22688 3.05801 9.55777 3.17189 9.68948L3.18075 9.69972L3.18063 9.69981C3.23723 9.76821 3.29306 9.83589 3.34826 9.9028C3.7347 10.3712 4.08995 10.8019 4.45775 11.1771C4.87532 11.6031 5.27486 11.9207 5.69325 12.111C6.45888 12.4591 7.47854 12.4635 9.14277 11.3318C11.2039 9.9302 11.7578 8.44891 11.7847 7.2031C11.8127 5.90201 11.2716 4.75273 10.9212 4.01987C10.8139 3.79535 10.5471 3.49061 10.0968 3.19913C9.65654 2.91419 9.08014 2.66821 8.41301 2.53559ZM10.776 2.14976C11.3427 2.51657 11.8087 2.97811 12.049 3.48069L12.0594 3.5026C12.4073 4.23005 13.0692 5.614 13.0344 7.23001C13.0076 8.47316 12.5724 9.79937 11.4005 11.054C11.5073 11.1265 11.6015 11.2021 11.6803 11.2691C11.8045 11.3746 11.92 11.4849 12.0178 11.5801C12.0428 11.6044 12.0661 11.6271 12.088 11.6486C12.1576 11.7166 12.2133 11.771 12.2649 11.8178C12.5757 12.0996 12.883 12.3846 13.1873 12.667L13.2128 12.6908C13.5093 12.9659 13.803 13.2385 14.0992 13.5077C14.5384 13.9071 14.9736 14.3488 15.3937 14.7751C15.6511 15.0363 15.9027 15.2917 16.1461 15.5281C16.3189 15.6958 16.4836 15.8625 16.644 16.0248C17.1504 16.5373 17.6144 17.0069 18.1544 17.3309C18.4504 17.5085 18.5464 17.8924 18.3688 18.1884C18.1912 18.4843 17.8073 18.5803 17.5113 18.4027C16.8215 17.9889 16.2035 17.3614 15.679 16.829C15.5375 16.6854 15.4028 16.5486 15.2753 16.4248C14.9862 16.1441 14.7191 15.8725 14.4578 15.6067C14.0632 15.2055 13.6819 14.8178 13.2583 14.4327C12.9572 14.1589 12.6593 13.8824 12.3641 13.6084L12.3369 13.5832C12.032 13.3002 11.7299 13.02 11.4252 12.7437C11.3546 12.6797 11.2759 12.6027 11.2028 12.5313C11.1835 12.5124 11.1646 12.4939 11.1463 12.4762C11.0525 12.3849 10.9618 12.2988 10.8711 12.2218C10.667 12.0484 10.5525 12.001 10.5157 11.9959C10.4736 11.9901 10.433 11.9802 10.3944 11.9667C10.2217 12.1011 10.0389 12.234 9.84567 12.3655C7.97044 13.6407 6.47942 13.8417 5.1758 13.2488C4.55957 12.9686 4.03484 12.5313 3.56508 12.0521C3.15678 11.6355 2.7642 11.1594 2.38188 10.6957C2.3282 10.6306 2.27472 10.5658 2.22143 10.5014C1.9725 10.2111 1.71321 9.72911 1.50513 9.17277C1.29078 8.59966 1.1117 7.89707 1.05647 7.14584C0.945689 5.63903 1.33645 3.8683 3.01772 2.65061C4.98122 1.22853 7.01158 0.982531 8.65673 1.30958C9.47426 1.4721 10.1992 1.77641 10.776 2.14976Z"></path>
+                                                </svg>
+                                                <p>2 ч 2 мин</p>
+                                            </div>
+                                        </div>
+                                        <div class="movie__slider-text">
+                                            <p>Ахмед спас Джона от смерти, и теперь тот должен вернуть долг. Гай Ричи как никогда серьезен — и как всегда крут</p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="movie__button btn">
+                                        Смотреть
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="movie__slide-pagination">
+                            <span class="swiper-pagination-bullet pagination_active"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="movie-slider">
+                    <a class="movie__title" href="#">В тренде</a>
+                    <div class="movie-slider__list" data-wrapper-slider>
+                        <div class="movie-slider__list-wrapper swiper-wrapper" data-container-slider>
+
+                            <div class="movie-slider__slide movie-item swiper-slide swiper-slide-active">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Библиотекарь 1</h3>
+                                    <div class="movie-slider__info-text">сериал 2023</div>
+                                </div>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Описание чего-то 2</h3>
+                                    <div class="movie-slider__info-text">65 просмотров 21 час назад</div>
+                                </div>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide" style="margin-right:8px;">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Описание чего-то 3</h3>
+                                    <div class="movie-slider__info-text">65 просмотров 21 час назад</div>
+                                </div>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide" style="margin-right:8px;">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Описание чего-то 4</h3>
+                                    <div class="movie-slider__info-text">65 просмотров 21 час назад</div>
+                                </div>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide" style="margin-right:8px;">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Описание чего-то 5</h3>
+                                    <div class="movie-slider__info-text">65 просмотров 21 час назад</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="movie-slider__button swiper-button-prev" data-slider-btn>
+                            <svg width="17" height="36" viewBox="0 0 17 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-tid="Arrow"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5001 17.9998L16.6001 3.1998L13.4001 0.799805L0.500097 17.9998L13.4001 35.1998L16.6001 32.7998L5.5001 17.9998Z" fill="white"></path></svg>
+                        </button>
+                        <button class="movie-slider__button swiper-button-next" data-slider-btn>
+                            <svg width="17" height="36" viewBox="0 0 17 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-tid="Arrow" style="transform: rotate(180deg);"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5001 17.9998L16.6001 3.1998L13.4001 0.799805L0.500097 17.9998L13.4001 35.1998L16.6001 32.7998L5.5001 17.9998Z" fill="white"></path></svg>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="movie-slider">
+                    <a class="movie__title" href="#">Специально для вас</a>
+                    <div class="movie-slider__list slider-big" data-wrapper-slider="2">
+                        <div class="movie-slider__list-wrapper swiper-wrapper" data-container-slider>
+
+                            <div class="movie-slider__slide movie-item swiper-slide swiper-slide-active" style="width: 300px;margin-right:10px;">
+                                <a href="#" class="movie-slider__slide-image slide__image-big" style="background-image: url(img/content/film_2_mini.webp);">
+                                    <div class="movie-slider__info-descript">
+                                        <h3 class="movie-slider__info-title">Библиотекарь</h3>
+                                        <div class="movie-slider__info-text">сериал 2023</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide swiper-slide-active" style="width: 300px;margin-right:10px;">
+                                <a href="#" class="movie-slider__slide-image slide__image-big" style="background-image: url(img/content/film_2_mini.webp);">
+                                    <div class="movie-slider__info-descript">
+                                        <h3 class="movie-slider__info-title">Библиотекарь</h3>
+                                        <div class="movie-slider__info-text">сериал 2023</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide swiper-slide-active" style="width: 300px;margin-right:10px;">
+                                <a href="#" class="movie-slider__slide-image slide__image-big" style="background-image: url(img/content/film_2_mini.webp);">
+                                    <div class="movie-slider__info-descript">
+                                        <h3 class="movie-slider__info-title">Библиотекарь</h3>
+                                        <div class="movie-slider__info-text">сериал 2023</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide swiper-slide-active" style="width: 300px;margin-right:10px;">
+                                <a href="#" class="movie-slider__slide-image slide__image-big" style="background-image: url(img/content/film_2_mini.webp);">
+                                    <div class="movie-slider__info-descript">
+                                        <h3 class="movie-slider__info-title">Библиотекарь</h3>
+                                        <div class="movie-slider__info-text">сериал 2023</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide swiper-slide-active" style="width: 300px;margin-right:10px;">
+                                <a href="#" class="movie-slider__slide-image slide__image-big" style="background-image: url(img/content/film_2_mini.webp);">
+                                    <div class="movie-slider__info-descript">
+                                        <h3 class="movie-slider__info-title">Библиотекарь</h3>
+                                        <div class="movie-slider__info-text">сериал 2023</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <button class="movie-slider__button swiper-button-prev" data-slider-btn>
+                            <svg width="17" height="36" viewBox="0 0 17 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-tid="Arrow"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5001 17.9998L16.6001 3.1998L13.4001 0.799805L0.500097 17.9998L13.4001 35.1998L16.6001 32.7998L5.5001 17.9998Z" fill="white"></path></svg>
+                        </button>
+                        <button class="movie-slider__button swiper-button-next" data-slider-btn>
+                            <svg width="17" height="36" viewBox="0 0 17 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-tid="Arrow" style="transform: rotate(180deg);"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5001 17.9998L16.6001 3.1998L13.4001 0.799805L0.500097 17.9998L13.4001 35.1998L16.6001 32.7998L5.5001 17.9998Z" fill="white"></path></svg>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="movie-slider">
+                    <a class="movie__title" href="#">В тренде</a>
+                    <div class="movie-slider__list" data-wrapper-slider>
+                        <div class="movie-slider__list-wrapper swiper-wrapper" data-container-slider>
+
+                            <div class="movie-slider__slide movie-item swiper-slide swiper-slide-active">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Библиотекарь 1</h3>
+                                    <div class="movie-slider__info-text">сериал 2023</div>
+                                </div>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Описание чего-то 2</h3>
+                                    <div class="movie-slider__info-text">65 просмотров 21 час назад</div>
+                                </div>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide" style="margin-right:8px;">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Описание чего-то 3</h3>
+                                    <div class="movie-slider__info-text">65 просмотров 21 час назад</div>
+                                </div>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide" style="margin-right:8px;">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Описание чего-то 4</h3>
+                                    <div class="movie-slider__info-text">65 просмотров 21 час назад</div>
+                                </div>
+                            </div>
+
+                            <div class="movie-slider__slide movie-item swiper-slide" style="margin-right:8px;">
+                                <a href="#" class="movie-slider__slide-image">
+                                    <img src="img/content/film_2_mini.webp" alt="">
+                                </a>
+                                <div class="movie-slider__info-descript">
+                                    <h3 class="movie-slider__info-title">Описание чего-то 5</h3>
+                                    <div class="movie-slider__info-text">65 просмотров 21 час назад</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="movie-slider__button swiper-button-prev" data-slider-btn>
+                            <svg width="17" height="36" viewBox="0 0 17 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-tid="Arrow"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5001 17.9998L16.6001 3.1998L13.4001 0.799805L0.500097 17.9998L13.4001 35.1998L16.6001 32.7998L5.5001 17.9998Z" fill="white"></path></svg>
+                        </button>
+                        <button class="movie-slider__button swiper-button-next" data-slider-btn>
+                            <svg width="17" height="36" viewBox="0 0 17 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-tid="Arrow" style="transform: rotate(180deg);"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5001 17.9998L16.6001 3.1998L13.4001 0.799805L0.500097 17.9998L13.4001 35.1998L16.6001 32.7998L5.5001 17.9998Z" fill="white"></path></svg>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__wrapper">
+                <div class="footer__container">
+                    <div class="footer__body">
+                        <div class="header__logo">
+                            <img src="img/logo.png" alt="">
+                            <p>LuwFilm.Ru</p>
+                        </div>
+                        <div class="footer__social">
+                            <div class="footer__social-container">
+                                <a href="#" target="_blank">
+                                    <svg width="2rem" height="2rem" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-tid="VK"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.264 4.264C3 5.53 3 7.567 3 11.625v.786c0 4.034 0 6.065 1.264 7.325C5.53 21 7.567 21 11.625 21h.925c3.941 0 5.94 0 7.186-1.249C21 18.484 21 16.448 21 12.375v-.786c0-4.034 0-6.065-1.264-7.325C18.47 3 16.433 3 12.375 3h-.786C7.555 3 5.524 3 4.264 4.264Zm1.773 4.203c.098 4.687 2.438 7.5 6.54 7.5l.233.007v-2.677a3.701 3.701 0 0 1 3.105 2.677h2.137a5.92 5.92 0 0 0-3.082-3.75 5.715 5.715 0 0 0 2.625-3.75H15.66c-.42 1.485-1.665 2.835-2.85 2.963V8.474h-1.935v5.183c-1.2-.315-2.715-1.755-2.783-5.19H6.037Z" fill="#fff"></path></svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg width="2rem" height="2rem" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-tid="VK"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.264 4.264C3 5.53 3 7.567 3 11.625v.786c0 4.034 0 6.065 1.264 7.325C5.53 21 7.567 21 11.625 21h.925c3.941 0 5.94 0 7.186-1.249C21 18.484 21 16.448 21 12.375v-.786c0-4.034 0-6.065-1.264-7.325C18.47 3 16.433 3 12.375 3h-.786C7.555 3 5.524 3 4.264 4.264Zm1.773 4.203c.098 4.687 2.438 7.5 6.54 7.5l.233.007v-2.677a3.701 3.701 0 0 1 3.105 2.677h2.137a5.92 5.92 0 0 0-3.082-3.75 5.715 5.715 0 0 0 2.625-3.75H15.66c-.42 1.485-1.665 2.835-2.85 2.963V8.474h-1.935v5.183c-1.2-.315-2.715-1.755-2.783-5.19H6.037Z" fill="#fff"></path></svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg width="2rem" height="2rem" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-tid="VK"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.264 4.264C3 5.53 3 7.567 3 11.625v.786c0 4.034 0 6.065 1.264 7.325C5.53 21 7.567 21 11.625 21h.925c3.941 0 5.94 0 7.186-1.249C21 18.484 21 16.448 21 12.375v-.786c0-4.034 0-6.065-1.264-7.325C18.47 3 16.433 3 12.375 3h-.786C7.555 3 5.524 3 4.264 4.264Zm1.773 4.203c.098 4.687 2.438 7.5 6.54 7.5l.233.007v-2.677a3.701 3.701 0 0 1 3.105 2.677h2.137a5.92 5.92 0 0 0-3.082-3.75 5.715 5.715 0 0 0 2.625-3.75H15.66c-.42 1.485-1.665 2.835-2.85 2.963V8.474h-1.935v5.183c-1.2-.315-2.715-1.755-2.783-5.19H6.037Z" fill="#fff"></path></svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg width="2rem" height="2rem" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-tid="VK"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.264 4.264C3 5.53 3 7.567 3 11.625v.786c0 4.034 0 6.065 1.264 7.325C5.53 21 7.567 21 11.625 21h.925c3.941 0 5.94 0 7.186-1.249C21 18.484 21 16.448 21 12.375v-.786c0-4.034 0-6.065-1.264-7.325C18.47 3 16.433 3 12.375 3h-.786C7.555 3 5.524 3 4.264 4.264Zm1.773 4.203c.098 4.687 2.438 7.5 6.54 7.5l.233.007v-2.677a3.701 3.701 0 0 1 3.105 2.677h2.137a5.92 5.92 0 0 0-3.082-3.75 5.715 5.715 0 0 0 2.625-3.75H15.66c-.42 1.485-1.665 2.835-2.85 2.963V8.474h-1.935v5.183c-1.2-.315-2.715-1.755-2.783-5.19H6.037Z" fill="#fff"></path></svg>
+                                </a>
+                            </div>
+                            <div class="footer__title">Следите за нами в соц сетях</div>
+                        </div>
+
+                    </div>
+                </div>  
+            </div>
+        </footer>
+    </div>
+
+    <!-- JQuery 1.7.3 mini -->
+    <script src="./module/jquery.min.js"></script>
+
+    <!-- Мои библиотеки -->
+    <script src="./module/slider.js"></script>
+    <script src="./module/menu.js"></script>
+
+</body>
+</html>
